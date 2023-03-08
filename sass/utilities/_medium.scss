@@ -1,0 +1,27 @@
+@use './colours' as *;
+
+@media (min-width: 768px) {
+	html {
+		font-size: 62.5%;
+	}
+	.navbar {
+		&__list {
+			box-shadow: none;
+			flex-direction: row;
+			justify-content: flex-end;
+			opacity: 1;
+			position: relative;
+			top: 0;
+			width: 60%;
+			&-item {
+				font-size: 2rem;
+				margin: 0 1rem;
+
+			}
+		}
+
+		&__icon {
+			display: none;
+		}
+	}
+}

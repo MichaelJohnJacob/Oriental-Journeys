@@ -50,7 +50,6 @@ body {
   text-transform: uppercase;
 }
 .navbar__logo-text {
-  color: #0098a1;
   padding: 0 0.2rem;
 }
 .navbar__active {
@@ -76,7 +75,7 @@ body {
   width: 100%;
 }
 .navbar__list-item {
-  color: #0098a1;
+  color: #333;
   display: block;
   font-size: 3rem;
   font-size: 2rem;
@@ -84,7 +83,7 @@ body {
   width: 100%;
 }
 .navbar__list-item--active, .navbar__list-item:hover {
-  color: #c63bfa;
+  color: #0098a1;
 }
 .navbar__list-active {
   top: 6rem;
@@ -98,5 +97,27 @@ body {
 }
 .navbar .fa-times {
   transform: rotate(180deg);
-  color: #c63bfa;
+  color: #0098a1;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+  .navbar__list {
+    box-shadow: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    opacity: 1;
+    position: relative;
+    top: 0;
+    width: 60%;
+  }
+  .navbar__list-item {
+    font-size: 2rem;
+    margin: 0 1rem;
+  }
+  .navbar__icon {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

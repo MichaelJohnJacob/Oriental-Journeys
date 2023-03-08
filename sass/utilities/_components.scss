@@ -35,7 +35,6 @@ body {
 		font-size: 2rem;
 		text-transform: uppercase;
 		&-text {
-			color: $main-colour;
 			padding: 0 0.2rem;
 		}
 	}
@@ -62,7 +61,7 @@ body {
 		width: 100%;
 
 		&-item {
-			color: $main-colour;
+			color: $dark;
 			display: block;
 			font-size: 3rem;
 			font-size: 2rem;
@@ -72,7 +71,7 @@ body {
 
 		&-item--active,
 		&-item:hover {
-			color: $secondary-colour;
+			color: $main-colour;
 		}
 
 		&-active {
@@ -87,9 +86,9 @@ body {
 		font-size: 3rem;
 		transition: 0.3s;
 	}
-    
+
 	.fa-times {
 		transform: rotate(180deg);
-		color: $secondary-colour;
+		color: $main-colour;
 	}
 }
