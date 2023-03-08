@@ -1,5 +1,95 @@
-body {
-	font-family: 'Kalam', cursive;
+@use './colours' as *;
+
+html {
+	font-size: 55%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
+:root {
+	scroll-padding-top: 44.6px;
+}
 
+body {
+	font-family: 'Kalam', cursive;
+	text-transform: capitalize;
+}
+
+// ========== NAVIGATION STARTS ==========
+.navbar {
+	align-items: center;
+	background: $pure-white;
+	border-radius: 5rem;
+	display: flex;
+	left: 50%;
+	padding: 1rem 2rem;
+	position: fixed;
+	text-align: center;
+	top: 2rem;
+	transform: translateX(-50%);
+	justify-content: space-between;
+	width: 96%;
+	z-index: 10;
+	&__logo {
+		color: $dark;
+		font-size: 2rem;
+		text-transform: uppercase;
+		&-text {
+			color: $main-colour;
+			padding: 0 0.2rem;
+		}
+	}
+	&__active {
+		box-shadow: 0 0.1rem 0.3rem $shadow;
+		border-radius: 0;
+		top: 0;
+		width: 100%;
+	}
+	&__list {
+		align-items: center;
+		background: $pure-white;
+		border-radius: 1rem;
+		box-shadow: 0 0.1rem 0.3rem $shadow;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		left: 0;
+		position: fixed;
+		padding: 1rem 0;
+		opacity: 0;
+		top: -100rem;
+		transition: top 0.3s linear;
+		width: 100%;
+
+		&-item {
+			color: $main-colour;
+			display: block;
+			font-size: 3rem;
+			font-size: 2rem;
+			margin: 1rem 0;
+			width: 100%;
+		}
+
+		&-item--active,
+		&-item:hover {
+			color: $secondary-colour;
+		}
+
+		&-active {
+			top: 6rem;
+			opacity: 1;
+		}
+	}
+
+	&__icon {
+		color: $main-colour;
+		cursor: pointer;
+		font-size: 3rem;
+		transition: 0.3s;
+	}
+    
+	.fa-times {
+		transform: rotate(180deg);
+		color: $secondary-colour;
+	}
+}

@@ -14,6 +14,89 @@ li {
   list-style: none;
 }
 
+html {
+  font-size: 55%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+:root {
+  scroll-padding-top: 44.6px;
+}
+
 body {
   font-family: "Kalam", cursive;
+  text-transform: capitalize;
+}
+
+.navbar {
+  align-items: center;
+  background: #fff;
+  border-radius: 5rem;
+  display: flex;
+  left: 50%;
+  padding: 1rem 2rem;
+  position: fixed;
+  text-align: center;
+  top: 2rem;
+  transform: translateX(-50%);
+  justify-content: space-between;
+  width: 96%;
+  z-index: 10;
+}
+.navbar__logo {
+  color: #333;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.navbar__logo-text {
+  color: #0098a1;
+  padding: 0 0.2rem;
+}
+.navbar__active {
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+  border-radius: 0;
+  top: 0;
+  width: 100%;
+}
+.navbar__list {
+  align-items: center;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  left: 0;
+  position: fixed;
+  padding: 1rem 0;
+  opacity: 0;
+  top: -100rem;
+  transition: top 0.3s linear;
+  width: 100%;
+}
+.navbar__list-item {
+  color: #0098a1;
+  display: block;
+  font-size: 3rem;
+  font-size: 2rem;
+  margin: 1rem 0;
+  width: 100%;
+}
+.navbar__list-item--active, .navbar__list-item:hover {
+  color: #c63bfa;
+}
+.navbar__list-active {
+  top: 6rem;
+  opacity: 1;
+}
+.navbar__icon {
+  color: #0098a1;
+  cursor: pointer;
+  font-size: 3rem;
+  transition: 0.3s;
+}
+.navbar .fa-times {
+  transform: rotate(180deg);
+  color: #c63bfa;
 }/*# sourceMappingURL=main.css.map */
