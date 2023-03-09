@@ -106,8 +106,25 @@ body {
   transition: 0.3s;
 }
 .navbar .fa-times {
-  transform: rotate(180deg);
   color: #0098a1;
+  transform: rotate(180deg);
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+.home__bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  width: 100%;
 }
 
 @media (min-width: 768px) {

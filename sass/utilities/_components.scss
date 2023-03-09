@@ -102,13 +102,33 @@ body {
 	}
 
 	.fa-times {
-		transform: rotate(180deg);
 		color: $main-colour;
+		transform: rotate(180deg);
 	}
 }
 
 // ========== NAVIGATION ENDS ==========
 
 // ========== HEADER STARTS ==========
+
+.home {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: relative;
+
+	&__bg {
+		&-video {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			object-fit: cover;
+			z-index: -1;
+			width: 100%;
+		}
+	}
+}
 
 // ========== HEADER ENDS ==========
