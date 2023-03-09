@@ -16,7 +16,6 @@
 			&-item {
 				font-size: 2rem;
 				margin: 0 1rem;
-
 			}
 		}
 
@@ -25,4 +24,15 @@
 		}
 	}
 
+	.home {
+		flex-flow: row;
+		&__content {
+			&__form {
+				&-panel {
+					width: 38rem;
+					margin-left: 1rem;
+				}
+			}
+		}
+	}
 }
