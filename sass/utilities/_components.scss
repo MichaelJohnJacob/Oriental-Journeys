@@ -236,40 +236,40 @@ body {
 	background: $lighter-white;
 
 	&__cards {
-		display: flex;
 		align-items: center;
+		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
 		width: 100%;
 	}
 
 	&__card {
-		width: 30rem;
-		margin: 2rem;
 		background: $pure-white;
 		border-radius: 0.5rem;
 		box-shadow: 0 0.3rem 0.5rem $shadow;
+		margin: 2rem;
 		overflow: hidden;
 		position: relative;
+		width: 30rem;
 
 		&-discount {
-			position: absolute;
-			top: 1rem;
-			left: 1rem;
-			display: block;
-			height: 3.5rem;
-			width: 6rem;
 			background: $discount;
 			color: $pure-white;
-			line-height: 4rem;
-			text-align: center;
+			display: block;
 			font-size: 2rem;
+			height: 3.5rem;
+			left: 1rem;
+			line-height: 4rem;
+			position: absolute;
+			top: 1rem;
+			text-align: center;
+			width: 6rem;
 		}
 
 		&-img {
 			height: 25rem;
-			width: 100%;
 			object-fit: cover;
+			width: 100%;
 		}
 
 		&__content {
@@ -290,25 +290,25 @@ body {
 
 			&__stars {
 				&-star {
-					padding: 2rem 0.2rem;
-					font-size: 2rem;
 					color: $star-colour;
+					font-size: 2rem;
+					padding: 2rem 0.2rem;
 				}
 			}
 
 			&__link {
 				&-btn {
-					font-size: 1.7rem;
-					margin-top: 1.4rem;
-					height: 3.5rem;
-					width: 12rem;
-					border-radius: 0.5rem;
-					outline: none;
-					border: none;
 					background: $main-colour;
+					border: none;
+					border-radius: 0.5rem;
 					color: $pure-white;
 					cursor: pointer;
+					font-size: 1.7rem;
+					height: 3.5rem;
+					margin-top: 1.4rem;
+					outline: none;
 					transition: 0.3s;
+					width: 12rem;
 				}
 
 				&-btn:hover {
