@@ -127,9 +127,11 @@ body {
   z-index: -1;
   width: 100%;
 }
+.home__content {
+  margin-top: 8rem;
+}
 .home__content-title {
   text-align: center;
-  margin-top: 7rem;
   font-size: 5rem;
   color: #fff;
   text-shadow: 0 0.3rem 0.5rem #333;
