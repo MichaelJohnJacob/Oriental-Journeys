@@ -4,6 +4,9 @@
 	html {
 		font-size: 62.5%;
 	}
+	:root {
+		scroll-padding-top: 72px;
+	}
 	.navbar {
 		&__list {
 			box-shadow: none;
@@ -36,6 +39,15 @@
 				&-btn {
 					width: 50%;
 				}
+			}
+		}
+	}
+
+	.features {
+		&__card {
+			width: 35rem;
+			&-img {
+				height: 35rem;
 			}
 		}
 	}

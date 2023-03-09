@@ -21,7 +21,7 @@ html {
 }
 
 :root {
-  scroll-padding-top: 72px;
+  scroll-padding-top: 45.6px;
 }
 
 body {
@@ -36,16 +36,19 @@ body {
 }
 
 .section-padding {
-  padding: 2rem;
+  padding: 6rem 4rem;
 }
 .section-heading {
   font-size: 4rem;
-  color: #0098a1;
+  color: #333;
   text-align: center;
   padding: 0 1rem;
   padding-top: 6rem;
   letter-spacing: 0.2rem;
   font-weight: 500;
+}
+.section-heading-first {
+  color: #0098a1;
 }
 .section-title {
   padding: 0 1rem;
@@ -206,9 +209,87 @@ body {
   color: #0098a1;
 }
 
+.features {
+  background: #f9f9f9;
+}
+.features__cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.features__card {
+  width: 30rem;
+  margin: 2rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+}
+.features__card-discount {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: block;
+  height: 3.5rem;
+  width: 6rem;
+  background: #ff3300;
+  color: #fff;
+  line-height: 4rem;
+  text-align: center;
+  font-size: 2rem;
+}
+.features__card-img {
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+}
+.features__card__content {
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.features__card__content-title {
+  color: #0098a1;
+  font-size: 3rem;
+  padding: 1rem 0;
+}
+.features__card__content-text {
+  color: #333;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.features__card__content__stars-star {
+  padding: 2rem 0.2rem;
+  font-size: 2rem;
+  color: #ffd700;
+}
+.features__card__content__link-btn {
+  font-size: 1.7rem;
+  margin-top: 1.4rem;
+  height: 3.5rem;
+  width: 12rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  background: #0098a1;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.features__card__content__link-btn:hover {
+  background: none;
+  border: 0.2rem solid #0098a1;
+  color: #0098a1;
+}
+
 @media (min-width: 768px) {
   html {
     font-size: 62.5%;
+  }
+  :root {
+    scroll-padding-top: 72px;
   }
   .navbar__list {
     box-shadow: none;
@@ -235,5 +316,11 @@ body {
   }
   .home__content__form-btn {
     width: 50%;
+  }
+  .features__card {
+    width: 35rem;
+  }
+  .features__card-img {
+    height: 35rem;
   }
 }/*# sourceMappingURL=main.css.map */

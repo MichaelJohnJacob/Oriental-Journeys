@@ -7,7 +7,7 @@ html {
 }
 
 :root {
-	scroll-padding-top: 72px;
+	scroll-padding-top: 45.6px;
 }
 
 body {
@@ -23,17 +23,21 @@ body {
 // ========== SECTION STARTS ==========
 .section {
 	&-padding {
-		padding: 2rem;
+		padding: 6rem 4rem;
 	}
 
 	&-heading {
 		font-size: 4rem;
-		color: $main-colour;
+		color: $dark;
 		text-align: center;
 		padding: 0 1rem;
 		padding-top: 6rem;
 		letter-spacing: 0.2rem;
 		font-weight: 500;
+
+		&-first {
+			color: $main-colour;
+		}
 	}
 
 	&-title {
@@ -227,6 +231,96 @@ body {
 // ========== MAIN STARS ==========
 
 // ========== FEATURES STARS ==========
+
+.features {
+	background: $lighter-white;
+
+	&__cards {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	&__card {
+		width: 30rem;
+		margin: 2rem;
+		background: $pure-white;
+		border-radius: 0.5rem;
+		box-shadow: 0 0.3rem 0.5rem $shadow;
+		overflow: hidden;
+		position: relative;
+
+		&-discount {
+			position: absolute;
+			top: 1rem;
+			left: 1rem;
+			display: block;
+			height: 3.5rem;
+			width: 6rem;
+			background: $discount;
+			color: $pure-white;
+			line-height: 4rem;
+			text-align: center;
+			font-size: 2rem;
+		}
+
+		&-img {
+			height: 25rem;
+			width: 100%;
+			object-fit: cover;
+		}
+
+		&__content {
+			padding-bottom: 2rem;
+			text-align: center;
+
+			&-title {
+				color: $main-colour;
+				font-size: 3rem;
+				padding: 1rem 0;
+			}
+
+			&-text {
+				color: $dark;
+				font-size: 1.5rem;
+				padding: 1rem;
+			}
+
+			&__stars {
+				&-star {
+					padding: 2rem 0.2rem;
+					font-size: 2rem;
+					color: $star-colour;
+				}
+			}
+
+			&__link {
+				&-btn {
+					font-size: 1.7rem;
+					margin-top: 1.4rem;
+					height: 3.5rem;
+					width: 12rem;
+					border-radius: 0.5rem;
+					outline: none;
+					border: none;
+					background: $main-colour;
+					color: $pure-white;
+					cursor: pointer;
+					transition: 0.3s;
+				}
+
+				&-btn:hover {
+					background: none;
+					border: 0.2rem solid $main-colour;
+					color: $main-colour;
+				}
+			}
+		}
+	}
+}
+
 // ========== FEATURES ENDS ==========
 
 // ========== MAIN ENDS ==========
