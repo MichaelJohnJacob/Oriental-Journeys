@@ -330,7 +330,6 @@ body {
 }
 
 .gallery {
-  min-height: 100vh;
   background: #f9f9f9;
 }
 .gallery__container {
@@ -374,7 +373,7 @@ body {
 .gallery__container__box__icons__link:hover {
   color: #0098a1;
 }
-.gallery__container__box__icons__link--active {
+.gallery__container__box:hover > .gallery__container__box__icons {
   opacity: 1;
   top: 0;
 }
@@ -431,7 +430,7 @@ body {
     margin-left: 1rem;
   }
   .gallery__container__box {
-    width: 40rem;
-    height: 30rem;
+    width: 36rem;
+    height: 35rem;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -382,7 +382,6 @@ body {
 // ========== GALLERY STARTS ==========
 
 .gallery {
-	min-height: 100vh;
 	background: $odd-section;
 
 	&__container {
@@ -428,12 +427,14 @@ body {
 				&__link:hover {
 					color: $main-colour;
 				}
+			}
 
-				&__link--active {
-					opacity: 1;top: 0;
-				}
+			&:hover > .gallery__container__box__icons {
+				opacity: 1;
+				top: 0;
 			}
 		}
+
 	}
 }
 

@@ -16,11 +16,12 @@
 		}
 	}
 
-    .gallery {
-        &__container {
-            &__box {
-                width: 40rem;height: 30rem;
-            }
-        }
-    }
+	.gallery {
+		&__container {
+			&__box {
+				width: 36rem;
+				height: 35rem;
+			}
+		}
+	}
 }

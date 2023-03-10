@@ -43,5 +43,6 @@ navLinks.forEach(n =>
 	})
 )
 
+
 window.addEventListener('scroll', changeMenuWidth)
 window.addEventListener('scroll', handleScrollSpy)
