@@ -216,6 +216,7 @@ body {
 
 .features {
   background: #f9f9f9;
+  min-height: 100vh;
 }
 .features__cards {
   align-items: center;
@@ -289,6 +290,9 @@ body {
   color: #0098a1;
 }
 
+.about {
+  min-height: 100vh;
+}
 .about__box {
   align-items: center;
   display: flex;
@@ -331,44 +335,45 @@ body {
 
 .gallery {
   background: #f9f9f9;
+  min-height: 100vh;
 }
 .gallery__container {
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .gallery__container__box {
-  height: 20rem;
-  width: 30rem;
-  margin: 2rem;
   cursor: pointer;
+  height: 20rem;
+  margin: 2rem;
   overflow: hidden;
   position: relative;
+  width: 30rem;
 }
 .gallery__container__box-img {
-  object-fit: cover;
   height: 100%;
+  object-fit: cover;
   width: 100%;
 }
 .gallery__container__box__icons {
-  position: absolute;
-  top: 120%;
-  left: 0;
+  align-items: flex-end;
   background: linear-gradient(transparent, #333);
   display: flex;
-  align-items: flex-end;
   justify-content: space-around;
   height: 100%;
-  width: 100%;
+  left: 0;
   opacity: 0;
+  position: absolute;
+  top: 120%;
   transition: 0.3s;
+  width: 100%;
 }
 .gallery__container__box__icons__link {
   color: #fff;
-  text-shadow: 0 0.1rem 0.3rem #333;
   font-size: 3rem;
   padding-bottom: 2rem;
+  text-shadow: 0 0.1rem 0.3rem #333;
 }
 .gallery__container__box__icons__link:hover {
   color: #0098a1;
