@@ -326,7 +326,52 @@ body {
 // ========== ABOUT STARTS ==========
 
 .about {
-	
+	&__box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+
+		&__image {
+			&-img {
+				height: 65vh;
+				width: 90vw;
+			}
+		}
+
+		&__content {
+			&-title {
+				font-size: 4rem;
+				color: $main-colour;
+			}
+			&-text {
+				font-size: 1.9rem;
+				color: $dark;
+			}
+
+			&__link {
+				&-btn {
+					border: none;
+					cursor: pointer;
+					transition: 0.3s;
+					height: 4rem;
+					width: 18rem;
+					margin-top: 1rem;
+					background-color: $main-colour;
+					font-size: 2rem;
+					color: $pure-white;
+				}
+				&-btn-more,
+				&-btn:hover {
+					background: none;
+					color: $main-colour;
+					border: 0.2rem solid $main-colour;
+					margin-right: 1rem;
+				}
+			}
+		}
+	}
 }
 
 // ========== ABOUT ENDS ==========
