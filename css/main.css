@@ -297,7 +297,7 @@ body {
   text-align: center;
 }
 .about__box__image-img {
-  height: 80vh;
+  height: 70vh;
   width: 80vw;
 }
 .about__box__content-title {
@@ -307,6 +307,7 @@ body {
 .about__box__content-text {
   color: #333;
   font-size: 1.9rem;
+  padding: 2rem 0;
 }
 .about__box__content__link-btn {
   background-color: #0098a1;

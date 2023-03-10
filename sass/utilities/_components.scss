@@ -335,7 +335,7 @@ body {
 
 		&__image {
 			&-img {
-				height: 80vh;
+				height: 70vh;
 				width: 80vw;
 			}
 		}
@@ -348,6 +348,7 @@ body {
 			&-text {
 				color: $dark;
 				font-size: 1.9rem;
+				padding: 2rem 0;
 			}
 
 			&__link {
