@@ -430,4 +430,8 @@ body {
   .about__box__content {
     margin-left: 1rem;
   }
+  .gallery__container__box {
+    width: 40rem;
+    height: 30rem;
+  }
 }/*# sourceMappingURL=main.css.map */

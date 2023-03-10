@@ -15,4 +15,12 @@
 			}
 		}
 	}
+
+    .gallery {
+        &__container {
+            &__box {
+                width: 40rem;height: 30rem;
+            }
+        }
+    }
 }
