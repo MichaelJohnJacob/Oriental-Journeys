@@ -434,7 +434,7 @@ body {
   width: 15rem;
   border-radius: 50%;
   object-fit: cover;
-  border: 0.7rem solid #fff;
+  border: 0.7rem solid #0098a1;
 }
 .reviews__container__box__content-title {
   font-size: 2.5rem;
@@ -489,6 +489,28 @@ body {
   }
   .features__card-img {
     height: 35rem;
+  }
+  .reviews__container {
+    margin: 8rem 0;
+  }
+  .reviews__container__box {
+    margin: 6rem 2rem;
+  }
+  .reviews__container__box__image-img {
+    height: 20rem;
+    width: 20rem;
+  }
+  .reviews__container__box__content-title {
+    font-size: 3.3rem;
+    padding: 2rem;
+  }
+  .reviews__container__box__content-text {
+    font-size: 2rem;
+    padding: 2rem;
+  }
+  .reviews__container__box__content__stars-star {
+    font-size: 2.5rem;
+    padding: 3rem 0.2rem;
   }
 }
 @media (min-width: 992px) {
