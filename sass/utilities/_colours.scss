@@ -1,13 +1,17 @@
 // ========== COLOURS ==========
 
 $main-colour: #0098a1;
-$secondary-colour: #c63bfa;
+
 $light-white: #eee;
 $light-grey: #ddd;
 $pure-white: #fff;
 $dark: #333;
-$lighter-white: #f9f9f9;
-$star-colour: #ffd700;
-$discount: #ff3300;
+$odd-section: #f9f9f9;
+
 
 $shadow: rgba(0, 0, 0, 0.3);
+
+
+// ========== GRADIENTS ==========
+
+$image-gradient: linear-gradient(transparent, $dark);

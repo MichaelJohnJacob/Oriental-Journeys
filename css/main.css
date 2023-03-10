@@ -234,7 +234,7 @@ body {
   width: 30rem;
 }
 .features__card-discount {
-  background: #ff3300;
+  background: #0098a1;
   color: #fff;
   display: block;
   font-size: 2rem;
@@ -266,7 +266,7 @@ body {
   padding: 1rem;
 }
 .features__card__content__stars-star {
-  color: #ffd700;
+  color: #0098a1;
   font-size: 2rem;
   padding: 2rem 0.2rem;
 }
@@ -327,6 +327,56 @@ body {
   background: none;
   border: 0.2rem solid #0098a1;
   color: #0098a1;
+}
+
+.gallery {
+  min-height: 100vh;
+  background: #f9f9f9;
+}
+.gallery__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.gallery__container__box {
+  height: 20rem;
+  width: 30rem;
+  margin: 2rem;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+.gallery__container__box-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.gallery__container__box__icons {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background: linear-gradient(transparent, #333);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s;
+}
+.gallery__container__box__icons__link {
+  color: #fff;
+  text-shadow: 0 0.1rem 0.3rem #333;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+.gallery__container__box__icons__link:hover {
+  color: #0098a1;
+}
+.gallery__container__box__icons__link--active {
+  opacity: 1;
+  top: 0;
 }
 
 @media (min-width: 768px) {
