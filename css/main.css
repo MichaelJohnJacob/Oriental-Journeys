@@ -451,6 +451,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .contact__info__box {
   margin: 4rem 2rem;
