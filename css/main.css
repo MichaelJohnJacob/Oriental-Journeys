@@ -444,6 +444,29 @@ body {
   padding: 2rem 0.2rem;
 }
 
+.contact {
+  background: #f9f9f9;
+}
+.contact__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact__info__box {
+  margin: 4rem 2rem;
+}
+.contact__info__box-title {
+  font-size: 2rem;
+  color: #333;
+}
+.contact__info__box-icon {
+  color: #0098a1;
+}
+.contact__info__box-text {
+  font-size: 1.7rem;
+  color: #333;
+}
+
 @media (min-width: 768px) {
   html {
     font-size: 62.5%;

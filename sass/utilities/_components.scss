@@ -516,4 +516,37 @@ body {
 }
 // ========== REVIEWS ENDS ==========
 
+// ========== CONTACT STARTS ==========
+
+.contact {
+	background: $odd-section;
+	&__row {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__info {
+		&__box {
+			margin: 4rem 2rem;
+
+			&-title {
+				font-size: 2rem;
+				color: $dark;
+			}
+
+			&-icon {
+				color: $main-colour;
+			}
+
+			&-text {
+				font-size: 1.7rem;
+				color: $dark;
+			}
+		}
+	}
+}
+
+// ========== CONTACT ENDS ==========
+
 // ========== MAIN ENDS ==========
